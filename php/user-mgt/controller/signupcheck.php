@@ -9,6 +9,6 @@
     }{
         $user = ['username'=> $username, 'password'=>$password, 'email'=>$email];
         $_SESSION['user'] = $user;
-        header('location: ../view/login.html');
+        header('location: ../view/login.php');
     }
 ?>

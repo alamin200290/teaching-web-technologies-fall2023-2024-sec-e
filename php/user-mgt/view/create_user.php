@@ -1,3 +1,8 @@
+<?php
+    //include('../controller/sessionCheck.php');
+    require_once('../controller/sessionCheck.php');
+?>
+
 <html lang="en">
 <head>
     <title>Create New</title>

@@ -1,9 +1,8 @@
 <?php
-    session_start();
-    if(!isset($_SESSION['flag'])){
-        header('location: login.html');
-    }
-
+    //include('../controller/sessionCheck.php');
+    //include_once('../controller/sessionCheck.php');
+    //require('../controller/sessionCheck.php');
+    require_once('../controller/sessionCheck.php');
 ?>
 
 

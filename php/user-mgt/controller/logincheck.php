@@ -7,7 +7,7 @@
     if($username == "" || $password == ""){
         echo "null value";
     }else if($username == $_SESSION['user']['username'] && $password == $_SESSION['user']['password']){
-        $_SESSION['flag'] = 'true';
+        $_SESSION['abc'] = 'true';
         header('location: ../view/home.php');
     }else{
         echo "invalid username/password!";
