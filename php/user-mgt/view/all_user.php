@@ -1,40 +1,32 @@
-<?php
-    //include('../controller/sessionCheck.php');
-    require_once('../controller/sessionCheck.php');
+<?php 
+  include_once('../controller/sessionCheck.php');
 ?>
 
 <html lang="en">
 <head>
-    <title>List of users</title>
+    <title>View All Users</title>
 </head>
 <body>
         
         <a href="home.php"> Back </a> |
-        <a href="../controller/logout.php"> Logout </a> 
+        <a href="../controller/logout.php"> logout </a> 
 
-        <br>
-        <br>
-
-        <table border="1">
+        <table border=1>
             <tr>
                 <td>ID</td>
-                <td>NAME</td>
-                <td>EMAIL</td>
-                <td>PASSWORD</td>
+                <td>Name</td>
+                <td>Email</td>
             </tr>
             <tr>
                 <td>1</td>
-                <td>ABC</td>
-                <td>ABC@aiub.edu</td>
-                <td>1234</td>
+                <td>alamin</td>
+                <td>alamin@aiub.edu</td>
             </tr>
             <tr>
-                <td>1</td>
-                <td>XYZ</td>
-                <td>xyz@aiub.edu</td>
-                <td>456</td>
+                <td>2</td>
+                <td>abc</td>
+                <td>abc@aiub.edu</td>
             </tr>
         </table>
-
 </body>
 </html>
