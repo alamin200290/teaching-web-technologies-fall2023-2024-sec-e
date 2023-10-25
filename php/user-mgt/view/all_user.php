@@ -1,5 +1,7 @@
 <?php 
   include_once('../controller/sessionCheck.php');
+  require_once('../model/userModel.php');
+  $users = getAllUser();
 ?>
 
 <html lang="en">
@@ -7,7 +9,6 @@
     <title>View All Users</title>
 </head>
 <body>
-        
         <a href="home.php"> Back </a> |
         <a href="../controller/logout.php"> logout </a> 
 
@@ -16,17 +17,19 @@
                 <td>ID</td>
                 <td>Name</td>
                 <td>Email</td>
+                <td>Option</td>
             </tr>
+    <?php   for($i=0; $i<count($users); $i++){ ?>
             <tr>
-                <td>1</td>
-                <td>alamin</td>
-                <td>alamin@aiub.edu</td>
+                <td><?=$users[$i]['id']?></td>
+                <td><?=$users[$i]['username']?></td>
+                <td><?=$users[$i]['email']?></td>
+                <td>
+                    <a href='edit.php?id=<?=$users[$i]['id']?>'> EDIT </a> |
+                    <a href='delete.php?id=<?=$users[$i]['id']?>'> DELETE </a> 
+                </td>
             </tr>
-            <tr>
-                <td>2</td>
-                <td>abc</td>
-                <td>abc@aiub.edu</td>
-            </tr>
+        <?php } ?>            
         </table>
 </body>
 </html>
