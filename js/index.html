@@ -1,15 +1,79 @@
 <html>
 <head>
     <title>JS Example</title>
-    <script src="script.js"></script>
+    <style>
+        #d1{
+            background-color: greenyellow;
+            width: 100px;
+            height: 100px;
+            position: relative;
+        }
+
+    </style>
 </head>
 <body>
-        <h1 id="h1">Test</h1>
-        <h1>Test</h1>
-        <h1>Test</h1>
-        <input type="text" id="username" name="username" value="" onkeyup="f1()" />
-        <input type="button" name="click" value="Click" onclick="f1()"/>
+        <h1 id="head">JS Example</h1>
+        <div id="d1"></div>
 
-        
+        <input type="text" id="name" name="name" value="" onkeyup="getName()" />
+        <input type="button" id="btn" name="button" value="Move" onclick="move()" />
+
+        <script>
+            //name = 'alamin';
+            //var name = "alamin";
+            let name = "alamin";
+            //const name ="alamin";
+
+            let student = [1, 'alamin', '3.4'];
+            student[0];
+
+            // if(){
+
+            // }else{
+
+            // }
+
+            function abc(){
+
+            }
+
+            let f1 = (a, b)=>{
+                return ;
+            }
+            f1();
+
+            //console.log('test');
+            //alert('test');
+            //document.write('This is JS test...');
+            //let obj = document.getElementsByTagName('h1')[0]
+            //document.getElementById('head').innerHTML = "test";
+            //obj.innerHTML = "Update!";
+
+            function test(){
+                document.getElementById('head').innerHTML = "ABC";
+            }
+
+            function getName(){
+                let name = document.getElementById('name').value;
+
+                if(name == ""){
+                    document.getElementById('head').innerHTML = "null username";
+                }else{
+                    document.getElementById('head').innerHTML = name;
+                }
+            }
+
+            function move(){
+                let current = document.getElementById('d1').style.left = '40px';
+                if(current == ""){
+                    current = "10px";
+                }else{
+                    alert(current);
+                }
+
+                document.getElementById('d1').style.left = current;
+            }
+
+        </script>
 </body>
 </html>
